@@ -1,0 +1,75 @@
+* {
+    red:        #eb6e67;
+    green:      #95ee8f;
+    blue:       #6eaafb;
+    cyan:       #6cdcf7;
+
+    text:       #f0f0ff;
+    text-alt:   #e8e8ee;
+    selected:   #50536b80;
+
+    text-color: @text;
+
+    spacing: 0;
+    background-color: transparent;
+
+    font: "Noto Sans 18";
+}
+
+window {
+    transparency: "real";
+    fullscreen: true;
+    background-color: #282c3468;
+}
+
+mainbox {
+    padding: 30% 30%;
+}
+
+inputbar {
+    margin: 0px 0px 10px 0px;
+    children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+    text-color: @cyan;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+    padding: 0 10px 0 0;
+    text-color: @text-alt;
+}
+
+listview {
+    spacing: 2px;
+    dynamic: true;
+    scrollbar: false;
+}
+
+element {
+    padding: 5px;
+    text-color: @text-alt;
+    highlight: bold #95ee8f; /* green */
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @text;
+}
+
+element urgent, element selected urgent {
+    text-color: @red;
+}
+
+element active, element selected active {
+    text-color: @purple;
+}
+
+message {
+    padding: 5px;
+    background-color: @selected;
+    border: 1px;
+    border-color: @cyan;
+}
