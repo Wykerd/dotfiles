@@ -4,3 +4,6 @@
 [submodule "packages/quickjs"]
 	path = packages/quickjs
 	url = https://github.com/bellard/quickjs.git
+[submodule "packages/dragon"]
+	path = packages/dragon
+	url = https://github.com/mwh/dragon.git

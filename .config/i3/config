@@ -17,7 +17,7 @@ gaps inner 10
 ### Borders ###
 
 default_border pixel 2
-default_floating_border none 
+default_floating_border pixel 1
 
 # Color Scheme
 set $fulltrans		#00000000
@@ -121,7 +121,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Screenshot
-bindsym --release Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+bindsym --release Print exec --no-startup-id maim -u -s | xclip -selection clipboard -t image/png
 
 # focus the child container
 #bindsym $mod+d focus child
